@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Main Profile page - {{name}}</title>
+</head>
+<body>
+	<h1>
+		Welcome, {{name.title()}}
+	</h1>
+	{% if name[0] == 'n' %}
+		<p>You must be a wise man</p>
+	{% else %}
+		<p>{{name.title()}}, there is a slight chance you might be a dumdum.</p>
+	{% endif %}
+</body>
+</html>
