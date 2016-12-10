@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Edit</title>
+</head>
+<body>
+	<form action="/edit_post/{{post_info.id}}" method="POST">
+		<input type="text" value="{{post_info.title}}" name="title">
+		<input type="text" value="{{post_info.text}}" name="text">
+		<input type="submit" value="Update!">
+	</form>
+</body>
+</html>

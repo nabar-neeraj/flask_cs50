@@ -12,6 +12,8 @@
 	<h2>{{ post.title }}</h2>
 	<h4>{{ post.date_posted.strftime("%a, %b %d, %Y") }}</h4>
 	<p>{{ post.text }}</p>
+	<a href="/delete_post/{{post.id}}">Remove Post</a>
+	<a href="/edit_post/{{post.id}}">Edit Post</a>
 	{% endfor %}
 </body>
 </html>
